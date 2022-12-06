@@ -9,9 +9,9 @@
 <body>
     <form id="form1" runat="server">
         <div>
-            <span>USERNAME:<asp:TextBox ID="User" runat="server"></asp:TextBox></span>
+            <span>USERNAME:<asp:TextBox ID="User" runat="server"></asp:TextBox><%--<asp:CustomValidator ID="CustomValidator1" ControlToValidate="User" runat="server" ErrorMessage="Non hai inserito un Username"></asp:CustomValidator>--%></span>
             <span>PASSWORD:<asp:TextBox ID="Password" runat="server"></asp:TextBox></span>
-
+            <asp:Button ID="Submit" runat="server" Text="Button" onclick="Submit_Click"/>
         </div>
     </form>
 </body>
