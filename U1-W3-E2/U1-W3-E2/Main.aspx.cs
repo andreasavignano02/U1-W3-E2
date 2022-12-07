@@ -17,6 +17,7 @@ namespace U1_W3_E2
         }
         protected void Submit_Click(object sender, EventArgs e)
         {
+          
         HttpCookie c = new HttpCookie("DatiUtente");
             c.Values["Username"] = User.Text;
             c.Expires = DateTime.Now.AddDays(1);

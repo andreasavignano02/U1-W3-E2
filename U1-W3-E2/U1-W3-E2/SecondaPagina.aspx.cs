@@ -12,13 +12,12 @@ namespace U1_W3_E2
         protected void Page_Load(object sender, EventArgs e)
         {
 
-            if (Request.Cookies[Request.Cookies.Count ] == null) 
-            {
-                Response.Redirect("Main.aspx");
-
-            }else if (Request.Cookies["DatiUtente"]!= null) 
+           if (Request.Cookies["DatiUtente"]!= null) 
             {
                 UserText.Text = Request.Cookies["DatiUtente"]["Username"];
+            }else
+            {
+                Response.Redirect("Main.aspx");
             }
         }
 
